@@ -20,7 +20,8 @@ const {buildEverything} = require('./build-ghaction');
 
 // Runs the build script for both stable and experimental release channels,
 // by configuring an environment variable.
-
+// Runs the build script for both stable and experimental release channels,
+// by configuring an environment variable.
 const sha = String(spawnSync('git', ['rev-parse', 'HEAD']).stdout).slice(0, 8);
 
 let dateString = String(
